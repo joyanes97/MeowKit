@@ -12,3 +12,7 @@ Thumbs.db
 .env
 *.key
 *.pem
+
+# Local release artifacts
+dist/
+upload-log.txt
