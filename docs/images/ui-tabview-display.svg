@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-labelledby="title desc">
+  <title id="title">MeowKit Advanced Settings — Display tab</title>
+  <desc id="desc">A 320 by 240 pixel rendering of the ui_tabview Display tab from the MeowKit firmware.</desc>
+  <defs>
+    <style>
+      .ui { font-family: Arial, Helvetica, sans-serif; }
+      .label { fill: #9AA394; font-size: 13px; }
+      .body { fill: #E9EFE2; font-size: 13px; }
+      .title { fill: #C4EE1F; font-size: 23px; font-weight: 700; }
+      .value { fill: #C4EE1F; font-size: 22px; font-weight: 700; }
+      .tab { fill: #9AA394; font-size: 13px; font-weight: 700; }
+      .selected { fill: #14180C; font-size: 13px; font-weight: 700; }
+      .key { fill: #000; font-size: 12px; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- ui_tabview: 320 × 241, TV_BG = #0A0B09 -->
+  <rect width="320" height="240" fill="#0A0B09"/>
+
+  <!-- 74 px vertical tab bar: Display / Sound / Connect / Time / System -->
+  <rect x="5" y="5" width="64" height="38" rx="8" fill="#C4EE1F"/>
+  <text class="ui selected" x="37" y="29" text-anchor="middle">Display</text>
+  <text class="ui tab" x="37" y="73" text-anchor="middle">Sound</text>
+  <text class="ui tab" x="37" y="113" text-anchor="middle">Connect</text>
+  <text class="ui tab" x="37" y="153" text-anchor="middle">Time</text>
+  <text class="ui tab" x="37" y="193" text-anchor="middle">System</text>
+
+  <!-- Display page: source coordinates offset by the 74 px tab bar -->
+  <text class="ui title" x="82" y="24">DISPLAY</text>
+  <rect x="82" y="32" width="230" height="1" fill="#C4EE1F" opacity=".3"/>
+  <text class="ui label" x="82" y="48">BRIGHTNESS</text>
+
+  <!-- LCD Backlight card: x=8, y=54, w=230, h=72 -->
+  <rect x="82" y="54" width="230" height="72" rx="12" fill="#141713" stroke="#C4EE1F" stroke-opacity=".25"/>
+  <text class="ui body" x="90" y="76">LCD Backlight</text>
+  <text class="ui value" x="296" y="78" text-anchor="end">50%</text>
+  <rect x="90" y="93" width="214" height="16" rx="8" fill="#2A2D26"/>
+  <rect x="90" y="93" width="107" height="16" rx="8" fill="#C4EE1F"/>
+  <circle cx="197" cy="101" r="15" fill="#fff" stroke="#C4EE1F" stroke-width="3"/>
+
+  <!-- LED Indicator card: x=8, y=132, w=230, h=72 -->
+  <rect x="82" y="132" width="230" height="72" rx="12" fill="#141713" stroke="#C4EE1F" stroke-opacity=".25"/>
+  <text class="ui body" x="90" y="154">LED Indicator</text>
+  <text class="ui value" x="296" y="156" text-anchor="end">30%</text>
+  <rect x="90" y="171" width="214" height="16" rx="8" fill="#2A2D26"/>
+  <rect x="90" y="171" width="64" height="16" rx="8" fill="#C4EE1F"/>
+  <circle cx="154" cy="179" r="15" fill="#fff" stroke="#C4EE1F" stroke-width="3"/>
+
+  <!-- Bottom key prompts: source x=168, y=204 -->
+  <rect x="168" y="204" width="144" height="32" rx="8" fill="#E9EFE2" opacity=".95"/>
+  <rect x="171" y="207" width="20" height="20" rx="4" fill="#C4EE1F"/>
+  <text class="ui key" x="181" y="222" text-anchor="middle">A</text>
+  <text class="ui key" x="195" y="222">Home</text>
+  <rect x="241" y="207" width="20" height="20" rx="4" fill="#C4EE1F"/>
+  <text class="ui key" x="251" y="222" text-anchor="middle">B</text>
+  <text class="ui key" x="265" y="222">Back</text>
+</svg>

@@ -1,0 +1,14 @@
+# PlatformIO build output
+.pio/
+
+# Local VS Code configuration
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local secrets
+.env
+*.key
+*.pem
