@@ -9,4 +9,4 @@ extern const uint8_t splash_gif_data[];
 }
 #endif
 
-static const size_t splash_gif_len = 1656248u;
+static const size_t splash_gif_len = 2166653u;

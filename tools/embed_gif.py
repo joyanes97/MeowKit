@@ -1,6 +1,6 @@
 """
 PlatformIO pre-build extra script.
-Converts logo_opt.gif → splash_gif_data.S  (GNU AS .incbin, instant)
+Converts boot_animation.gif → splash_gif_data.S  (GNU AS .incbin, instant)
                        → splash_gif.h       (tiny extern declarations)
 
 Result: GIF bytes land in Flash RODATA with zero C compilation overhead.
@@ -9,7 +9,7 @@ Import("env")  # noqa: F821  (PlatformIO SCons magic)
 import os
 
 project_dir = env.subst("$PROJECT_DIR")
-gif_path    = os.path.join(project_dir, "logo_animation.gif")
+gif_path    = os.path.join(project_dir, "boot_animation.gif")
 splash_dir  = os.path.join(project_dir, "src", "splash")
 
 asm_out = os.path.join(splash_dir, "splash_gif_data.S")
@@ -62,9 +62,9 @@ else:
         "#ifdef __cplusplus\n"
         "}\n"
         "#endif\n\n"
-        "static const size_t splash_gif_len = 0u;  // logo_opt.gif not found\n"
+        "static const size_t splash_gif_len = 0u;  // boot_animation.gif not found\n"
     )
-    print("[embed_gif] logo_opt.gif not found — splash will use text fallback")
+    print("[embed_gif] boot_animation.gif not found — splash will use text fallback")
 
 # Write only when content changed (avoids needless recompilation)
 for path, body in ((asm_out, asm_body), (hdr_out, hdr_body)):
